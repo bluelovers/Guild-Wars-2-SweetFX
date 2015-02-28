@@ -1,9 +1,13 @@
 @echo off
 
+set folder=SweetFX Screenshot
+
+md "%folder%"
+
 FOR %%V IN ("*.bmp") do (call :myDosFunc "%%~V")
 rem FOR %%V IN (%1) do echo %%~tV
 
-move *.bmp "SweetFX Screenshot\"
+move *.bmp "%folder%\"
 
 GOTO :EOF
 
