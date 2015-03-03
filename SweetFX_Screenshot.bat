@@ -1,8 +1,10 @@
 @echo off
 
 set folder=SweetFX Screenshot
+set folder_gw2=Screens
 
 md "%folder%"
+md "%folder_gw2%"
 
 FOR %%V IN ("*.bmp") do (call :myDosFunc "%%~V")
 rem FOR %%V IN (%1) do echo %%~tV
