@@ -7,9 +7,13 @@ md "%folder%"
 md "%folder_gw2%"
 
 FOR %%V IN ("*.bmp") do (call :myDosFunc "%%~V")
+FOR %%V IN ("*.png") do (call :myDosFunc "%%~V")
+FOR %%V IN ("*.jpg") do (call :myDosFunc "%%~V")
 rem FOR %%V IN (%1) do echo %%~tV
 
 move *.bmp "%folder%\"
+move *.png "%folder%\"
+move *.jpg "%folder%\"
 
 GOTO :EOF
 
